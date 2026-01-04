@@ -2,7 +2,6 @@ package ex_Tasks;
 
 public class Lab_Task_24Dec_Unary {
     static void main() {
-
         //max/min among 3 numbers  way 1
         System.out.println("---------------Way 1 -----------------");
         int n1= 2, n2= 9, n3= -11;
@@ -19,7 +18,6 @@ public class Lab_Task_24Dec_Unary {
         int min1 = (n1 < n2) ? n1 : n2;
         int minFinal = (min1 < n3) ? min1 : n3;
         System.out.println("Way 2: min number among "+ n1 + ", " + n2 + ", and " + n3 + " is : " + minFinal);
-
 
         //max/min among 3 numbers  way 3
         System.out.println("---------------Way 3 -----------------");
