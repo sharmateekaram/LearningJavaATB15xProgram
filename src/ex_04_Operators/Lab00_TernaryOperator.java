@@ -43,6 +43,18 @@ public class Lab00_TernaryOperator {
         String result4 = (num%2 ==0) ? "even" : "odd";
         System.out.println(result4);
 
+        //make number to 18
+        int num1 =21;
+        int ans = (num1>18) ? num1-(num1-18): num1+(18-num1);
+        System.out.println(ans);
+
+        int myAge =10;
+        boolean bl = myAge>18? true : false;
+        if(bl){
+            System.out.println("Greater than 18");
+        }else
+            System.out.println("Less than 18");
+
 
 
     }

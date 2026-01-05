@@ -11,5 +11,7 @@ public class Lab00_If_CJI_Options {
         }else{
             System.out.println("Sorry !! you need to wait to VOTE till You are 18");
         }
+
+
     }
 }
