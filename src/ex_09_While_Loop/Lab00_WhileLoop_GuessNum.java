@@ -1,12 +1,11 @@
-package ex_02_Java_Basics;
+package ex_09_While_Loop;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Akki {
+public class Lab00_WhileLoop_GuessNum {
 
     static void main(String[] args) {
-
 
         Random random = new Random();
         int numToGuess = random.nextInt(100);
@@ -24,7 +23,6 @@ public class Akki {
                 scanner.next(); //again asking for entry
                 continue;
             }
-
 
             guessedNum = scanner.nextInt();
             attempts++;
