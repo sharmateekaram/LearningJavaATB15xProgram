@@ -1,6 +1,6 @@
 package ex_Tasks;
 
-public class Lab_Task_26Dec_IncreDecreOperators {
+public class Lab_Task2025_26Dec_IncreDecreOperators {
     static void main() {
 
         int a = 10;

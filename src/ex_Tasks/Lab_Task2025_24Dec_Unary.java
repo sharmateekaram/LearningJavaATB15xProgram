@@ -1,6 +1,6 @@
 package ex_Tasks;
 
-public class Lab_Task_24Dec_Unary {
+public class Lab_Task2025_24Dec_Unary {
     static void main() {
         //max/min among 3 numbers  way 1
         System.out.println("---------------Way 1 -----------------");

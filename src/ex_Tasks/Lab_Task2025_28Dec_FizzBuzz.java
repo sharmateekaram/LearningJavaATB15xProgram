@@ -1,6 +1,6 @@
 package ex_Tasks;
 
-public class Lab_Task_28Dec_FizzBuzz {
+public class Lab_Task2025_28Dec_FizzBuzz {
     static void main() {
         /*Write a program that prints numbers from 1 to 100.
         However, for multiples of 3, print "Fizz" instead of the number, and

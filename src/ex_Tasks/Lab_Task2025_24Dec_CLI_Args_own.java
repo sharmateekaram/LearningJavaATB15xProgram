@@ -1,6 +1,6 @@
 package ex_Tasks;
 
-public class Lab_Task_24Dec_CLI_Args_own {
+public class Lab_Task2025_24Dec_CLI_Args_own {
     static void main(String[] args) {
 
 

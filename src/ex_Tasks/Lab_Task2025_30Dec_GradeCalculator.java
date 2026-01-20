@@ -2,7 +2,7 @@ package ex_Tasks;
 
 import java.util.Scanner;
 
-public class Lab_Task_30Dec_GradeCalculator {
+public class Lab_Task2025_30Dec_GradeCalculator {
     static void main() {
        /* Write a program that calculates and displays the letter grade
         for a given numerical score (e.g., A, B, C, D, or E) based on the following grading scale:

@@ -2,7 +2,7 @@ package ex_Tasks;
 
 import java.util.Scanner;
 
-public class Lab_Task_27Dec_Triangles {
+public class Lab_Task2025_27Dec_Triangles {
     static void main() {
         System.out.println("---Do you want to know about Types of Triangles ----");
         Scanner sc_userInput = new Scanner(System.in);

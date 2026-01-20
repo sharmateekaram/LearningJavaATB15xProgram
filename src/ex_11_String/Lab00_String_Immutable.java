@@ -40,6 +40,17 @@ public class Lab00_String_Immutable {
         System.out.println("s3 identityHashCode: " + System.identityHashCode(s3));
         System.out.println("s4 identityHashCode: " + System.identityHashCode(s4));
 
+        //interview
+        StringBuffer s = new StringBuffer("Akash");
+        String str =s.toString();   //change string  burrfer  to string  and become  immutable
+        //The s.toString() method converts a mutable StringBuffer object ("Akash") into an immutable String object.
+        // It creates a new String representation of the current buffer content, allowing it to be used in methods that
+        // require a String, such as System.out.println(), without modifying the original StringBuffer.
+
+        System.out.println(s.toString());
+        System.out.println(s.toString().toLowerCase());
+        System.out.println(s);
+
     }
 
 
