@@ -34,11 +34,15 @@ public class Lab00_String_Immutable {
         String s2 = "Hello";
         String s3 = new String("Hello");
         String s4 = "Hello";
+        int a =5;
+        int b=5;
 
         System.out.println("s1 identityHashCode: " + System.identityHashCode(s1));
         System.out.println("s2 identityHashCode: " + System.identityHashCode(s2));
         System.out.println("s3 identityHashCode: " + System.identityHashCode(s3));
         System.out.println("s4 identityHashCode: " + System.identityHashCode(s4));
+        System.out.println("a identityHashCode: " + System.identityHashCode(a));
+        System.out.println("b identityHashCode: " + System.identityHashCode(b));
 
         //interview
         StringBuffer s = new StringBuffer("Akash");

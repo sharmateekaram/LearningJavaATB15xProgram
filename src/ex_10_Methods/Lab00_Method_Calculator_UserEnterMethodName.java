@@ -55,6 +55,7 @@ public class Lab00_Method_Calculator_UserEnterMethodName {
                 break;
             default:
                 System.out.println("Enter valid method name");
+                System.exit(0);
                 break;
         }
         return anstoReturn;
