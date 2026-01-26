@@ -19,9 +19,9 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
         // monthNameFinder(scanner);//8) Month Name Finder
         // printUsingWhileLloop1to10(); //9) Print Numbers Using do-while 1-10
         // printEvenNum1to50(); //10) Print Even Numbers
-       // reverseNumber(scanner);
+        reverseNumber(scanner);
         // reverseNumberUsingMethod(scanner);
-        reverseNumberUsingRecussion(scanner);
+       // reverseNumberUsingRecussion(scanner);
 
 
         // breakStatementExample(); //12) Break Statement Example
@@ -261,7 +261,7 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
             do{
                 reverseNum =  (reverseNum*10) + (num%10);
                 num = num/10;
-                }while(num>0);
+                }while(num!=0);
             System.out.println(reverseNum);
 
         }
