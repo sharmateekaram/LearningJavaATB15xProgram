@@ -2,8 +2,9 @@ package ex_Tasks;
 
 import java.util.Scanner;
 
-public class Lab_Task2025_11Jan_JavaCodingTest {
 
+public class Lab_Task2025_11Jan_JavaCodingTest {
+    static long rev=0;
     static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +19,11 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
         // monthNameFinder(scanner);//8) Month Name Finder
         // printUsingWhileLloop1to10(); //9) Print Numbers Using do-while 1-10
         // printEvenNum1to50(); //10) Print Even Numbers
-        reverseNumber(scanner);
+       // reverseNumber(scanner);
+        // reverseNumberUsingMethod(scanner);
+        reverseNumberUsingRecussion(scanner);
+
+
         // breakStatementExample(); //12) Break Statement Example
         // continueStatementExample(); //13) Continue Statement Example
         scanner.close();
@@ -260,6 +265,79 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
             System.out.println(reverseNum);
 
         }
+
+    //11.1) Reverse a Number using recussion
+    //Description: Write a Java program to reverse a given number using a do-while loop.
+    static void reverseNumberUsingRecussion(Scanner scanner){
+        System.out.println("Java program to reverse a given number using recussion.");
+        long num =readLong(scanner, "Please enter a integer/Long number : ");
+        reverse(num);
+        System.out.println(rev);
+    }
+
+    static void reverse(long n){
+        if(n<=0){
+            return;
+        }
+        long rem = n % 10;
+        rev =(rev *10) +rem;
+        reverse(n/10);
+    }
+
+
+
+
+    //11.2) Reverse a Number reverseNumberUsingMethod
+    //Description: Write a Java program to reverse a given number using reverseNumberUsingMethod.
+    static void reverseNumberUsingMethod(Scanner scanner){
+        System.out.println("Java program to reverse a given number using method.");
+        System.out.print("Please enter number datatype name : ");
+        String dataTypeName = scanner.next();
+        if(dataTypeName.matches("^[a-zA-Z]+$")){
+            //int opeFinalResult = allArithmeticOperation(num1, num2, dataTypeName);
+            switch (dataTypeName.toLowerCase()){
+                case "long", "integer":
+                    reverseLong(scanner);
+                    break;
+                case "double" :
+                    reverseDouble(scanner);
+                    break;
+                default:
+                    System.out.println("Please enter integer/double/long");
+                    break;
+            }
+        }else{
+            System.out.println("Dear User!! dataTypeName name should be a string as integer/double/long!!!");
+        }
+
+
+    }
+
+    public static void reverseLong(Scanner scanner){
+        long num =readLong(scanner, "Please enter a integer/Long number : ");
+        String strNum = String.valueOf(num);
+        StringBuilder reversedString = new StringBuilder(strNum).reverse();
+        if (strNum.charAt(0) == '-'){
+            reversedString.deleteCharAt(reversedString.length()-1);
+            reversedString.insert(0,'-');
+        }
+        long reverseNum = Long.parseLong(reversedString.toString());
+        System.out.println(reverseNum);
+    }
+    public static void reverseDouble(Scanner scanner){
+        double num =readDouble(scanner, "Please enter a double number : ");
+        String strNum = String.valueOf(num);
+        StringBuilder reversedString = new StringBuilder(strNum).reverse();
+        if (strNum.charAt(0) == '-'){
+            reversedString.deleteCharAt(reversedString.length()-1);
+            reversedString.insert(0,'-');
+        }
+        double reverseNum = Double.parseDouble(reversedString.toString());
+        System.out.println(reverseNum);
+    }
+
+
+
 
         //12) Break Statement Example
         //Description: Write a Java program to print numbers from 1 to 10, but stop the loop when the number becomes 5 using the break statement.
