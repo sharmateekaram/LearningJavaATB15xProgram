@@ -18,9 +18,9 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
         // monthNameFinder(scanner);//8) Month Name Finder
         // printUsingWhileLloop1to10(); //9) Print Numbers Using do-while 1-10
         // printEvenNum1to50(); //10) Print Even Numbers
-
+        reverseNumber(scanner);
         // breakStatementExample(); //12) Break Statement Example
-        continueStatementExample(); //13) Continue Statement Example
+        // continueStatementExample(); //13) Continue Statement Example
         scanner.close();
     }
 
@@ -248,15 +248,16 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
 
         //11) Reverse a Number
         //Description: Write a Java program to reverse a given number using a do-while loop.
-        static void reverseNumber(){
+        static void reverseNumber(Scanner scanner){
             System.out.println("Java program to reverse a given number using a do-while loop.");
-            int num=123;
+            long num =readLong(scanner, "Please enter a integer/Long number : ");
+           // long num=98712319;
+            long reverseNum=0 ;
             do{
-                if(num%2==0){
-                    System.out.println(num);
-                }
-                num++;
-            }while(num<=50);
+                reverseNum =  (reverseNum*10) + (num%10);
+                num = num/10;
+                }while(num>0);
+            System.out.println(reverseNum);
 
         }
 
@@ -313,8 +314,7 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
 
     public static int readInt(Scanner scanner, String prompt){
         System.out.print(prompt);
-        if(scanner.hasNextInt())
-        {
+        if(scanner.hasNextInt()){
             return scanner.nextInt();
         }else{
             System.out.println("please enter integer value only");
@@ -324,11 +324,20 @@ public class Lab_Task2025_11Jan_JavaCodingTest {
     }
     public static double readDouble(Scanner scanner, String prompt){
         System.out.print(prompt);
-        if(scanner.hasNextDouble())
-        {
+        if(scanner.hasNextDouble()){
             return scanner.nextDouble();
         }else{
             System.out.println("please enter double value only");
+            System.exit(0);
+            return 0;
+        }
+    }
+    public  static  long readLong(Scanner scanner, String prompt){
+        System.out.println(prompt);
+        if (scanner.hasNextLong()){
+            return  scanner.nextLong();
+        }else {
+            System.out.println("please enter integer or long value only");
             System.exit(0);
             return 0;
         }
